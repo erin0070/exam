@@ -1,0 +1,115 @@
+/* MOBIL */
+#pagewrap {
+    width: 100%;
+}
+
+#pageheader {
+    grid-area: hd;
+}
+
+#html {
+    grid-area: html;
+    margin: 10px;
+}
+
+#css {
+    grid-area: css;
+    margin: 10px;
+
+}
+
+#int {
+    grid-area: int;
+        margin: 10px;
+
+}
+
+#respon {
+    grid-area: respon;
+        margin: 10px;
+
+}
+
+#ia {
+    grid-area: ia;
+        margin: 10px;
+
+}
+
+#wksp {
+    grid-area: wksp;
+        margin: 10px;
+
+}
+
+#pagefooter {
+    grid-area: ft;
+}
+
+.webudpageimage {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        overflow: hidden;
+    }
+    
+
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+      
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-areas: 
+            'int int int int'
+            'html html css css'
+            'html html css css'
+            'respon respon respon respon'
+            'ia ia ia ia'
+            'wksp wksp wksp wksp';
+    } 
+    
+    .webudpageimage {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        overflow: hidden;
+    }
+    
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (7 1fr);
+        grid-template-areas: 
+            'html html css css respon respon respon'
+            'html html css css ia ia ia'
+            'html html css css wksp wksp wksp';
+    }
+    
+    #pagewrap a:nth-child(3) {
+        grid-column: 2/4;
+        grid-row: 2/2;
+        
+    }
+    
+    .webudpageimage {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        overflow: hidden;
+    }
+    
+    #internetpic {
+        border: 10px;
+        border-style: solid;
+        border-color: white;
+    }
+    
+}

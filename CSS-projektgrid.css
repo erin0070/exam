@@ -1,0 +1,102 @@
+/* MOBIL */
+#pagewrap {
+    width: 100%;
+}
+
+#pageheader {
+    grid-area: hd;
+}
+
+#is {
+    grid-area: is;
+}
+
+#onepage {
+    grid-area: op;
+}
+
+#exam {
+    grid-area: exam;
+}
+
+#dt {
+    grid-area: dt;
+}
+
+#pagefooter {
+    grid-area: ft;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (4 1fr);
+        grid-template-areas: 
+            'hd hd hd hd'
+            'dt is is exam'
+            'dt op op exam'
+            'ft ft ft ft';
+        /*
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'is exam'
+            'op exam'
+            'dt exam'
+            'ft ft';
+        */
+    }
+        
+    #ispic, #onepagepic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #dtpic, #exampic {
+        width: 100%;
+        height: 100%;
+    }
+  
+}
+
+/* DESKTOP
+@media screen and (min-width: 1000px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (4 1fr);
+        grid-template-areas: 
+            'hd hd hd hd'
+            'dt is is exam'
+            'dt op op exam'
+            'ft ft ft ft';
+    }
+    /*
+    .projektlandingpage {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+      
+    }
+    */
+    /*
+    #ispic, #onepagepic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #dtpic {
+        width: 100%;
+        height: inherit;
+    }
+    
+    #exampic {
+        width: 100%;
+        height: inherit;
+    }
+}
+*/

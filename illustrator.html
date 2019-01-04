@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewrapil">
+        
+            <header class="header" 
+                    id="pageheader">
+                <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+        
+            <div id="title">
+                <h1>
+                    Adobe Illustrator
+                </h1>
+            </div>
+            <div id="illtext">
+                <p>
+                    Adobe Illustrator er et vector baseret redigerings program. Det er mest brugt til at lave vector grafikker, logo’s, figurer, knapper, osv. Vectorbaseret betyder, at hvis et givent objekt eller element bliver skaleret eller zoomed på, bliver det ikke pixeleret. Sagt på en anden måde, en vector vil ikke tabe skarphed hvis det er skaleret op eller ned. 
+                </p>
+            </div>
+            <div id="illpic"
+                 class="images">
+                <img src="PIX/pixel-vs-vector-images.png"
+                     alt="Pixel versus Vector Mario Example"
+                     class="responsive"
+                     id="pvsv">
+                <figcaption>
+                    <a href="https://www.corporate3design.com/blog/112/">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="illtext2">
+                <p>
+                    En ulempe ved et vectorbaseret program som Illustrator, er at du ikke kan tegne frihånd, men kun i former. Det er meget mere matematisk. En linje i Illustrator består af to punkter, der er forbundet med en computeralgoritme, i stedet for blot en linje af pixels. Det tager lidt mere tid at lære programmet, men det er det værd.
+                </p>
+                <p>
+                    Nogle vigtige tools i Illustrator er Shapes, Paths og Text. Alle tre er brugt meget til at lave logos, icons, osv. 
+                </p>
+            </div>                
+            <div id="slideshowtitle">
+                <h2>
+                    Projekter lavet med Illustrator
+                </h2>
+            </div>
+            <div class="slideshow-container"
+                 id="illslideshow">
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="PIX/illustrator_exercise_button.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="PIX/illustrator_exercise_flag.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="PIX/illustrator_exercise_sun.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="PIX/illustrator_exercise_shield.jpg" style="width:100%">
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+        }
+        
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+  
+</html>

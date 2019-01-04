@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewraphtml">
+        
+            <header class="header" 
+                    id="pageheader">
+               <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+            
+            <div id="title">
+                <h1>HTML</h1>
+            </div>
+            
+            <div class="grun"
+                 id="grund">
+                <h2>Grundlæggende</h2>
+            </div>
+            <div id="grundpic"
+                 class="images">
+                <img src="PIX/htmlattribute.png"
+                     alt="HTML Attribute Description"
+                     class="responsive"
+                     id="attribute">
+                <figcaption>
+                    <a href="https://www.onlinedesignteacher.com/2016/03/html-attributes.html"
+                       class="sources">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="grundtext">
+                <p>
+                    Alt vi ser her hedder et HTML element. Det begynder med et start tag i “anchor brackets” ( &lt; &gt; ) og slutter med et end tag, som også er i “anchor brackets.” Tags giver elementer navn, og fortæller hvad elementet handler om.
+                </p>
+                <p>
+                    Lige efter “start tag” kommer elementets attribut. Attributer giver mere information om elementer. Attribut værdier kommer typisk lige efter en attribut. Det giver kontekst eller mening til attributter. Værdier er altid i “ “. Hvis værdier er ikke imellem “ “, giver attributet ingen mening til elementet. 
+                </p>
+            </div>
+            <div id="grundlist">
+                <p>
+                    Nogle attribut eksempler:
+                </p>
+                <ul>
+                    <li>href (til links)</li>
+                    <li>src (til billede)</li>
+                    <li>height</li>
+                    <li>width</li>
+                    <li>id (til idenifikation)</li>
+                </ul>
+            </div>
+            <div id="grundtext2">
+                <p>
+                    Hvis start tag slutter med en bracket, kommer der content eller indhold bagefter. Content er, hvad der påvirkes af elementet. 
+                </p>
+                <p>
+                    Til sidst er kommer “end tag”. Det afslutter elementet, og har altid en &frasl; (backslash) med. Hvis det ikke har en backslash med, så virker element ikke. 
+                </p>
+            </div>
+            
+            <div class="text"
+                 id="doc">
+                <h2> HTML Docukment</h2>
+            </div>
+            <div id="docpic"
+                 class="images">
+                <img src="PIX/document_structure.JPG"
+                     alt="HTML Document Example"
+                     class="responsive"
+                     id="docexam">
+                <figcaption>
+                    <a href="https://www.w3schools.com/html/html_editors.asp"
+                       class="sources">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="doctext">
+                <p>
+                    Et HTML Dokument starter med en dokument type declaration (erklæring) tag. Det giver dokument en identitet. Dokumentet skal starte og slutte med &lt;html&gt; tag. Hvis alle andre tags ikke er imellem de to html tag, så er det ikke et HTML dokument og vil ikke virke på WWW. 
+                </p>
+                <p>
+                    Derfra kommer de head og body tags. Et HEAD tag, har typisk en masse information. Nogle ting vi kan putte i HEAD tag, er meta data, titlen af hjemmeside, links til stylesheets, links til Javascript og andre resourcer.
+                </p>
+                <p>
+                    Indhold som ligger imellem BODY tags, er alt indholdet til hjemmesiden. Tekst, billeder, videoer, kort, osv. Alt indhold skal blive imellem de to BODY tags og indholdet skal struktureres. 
+                </p>
+            </div>
+            
+            <div id="structure">
+                <h2>Hvordan Struktereres et HTML Dokument</h2>
+            </div>
+            <div id="structuretext">
+                <p>
+                    Der er mange forskellige måder at strukturere en hjemmesiden. Det afhænger mest af hvad hjemmesidens budskab er, hvem er hjemmesidens bruger, og hvilken type indhold skal ligge på hjemmesiden.
+                </p>
+                <p>
+                    Det er typisk at starte med en header tag. Header og Head tag er ikke det sammen. Head tag er ligesom hjernen af en hjemmeside, hvorimod header tag er ligesom hovedet af en hjemmeside. 
+                </p>
+            </div>
+            <div id="structurepic"
+                 class="images">
+                <img src="PIX/document_structure_example.png"
+                     alt="HTML Document Structure Example"
+                     class="responsive"
+                     id="structure1">
+                <figcaption>
+                    <a href="https://blog.udemy.com/learn-html-learn-the-foundations-of-html/"
+                       class="sources">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="structuretext2">
+                <p>
+                    I header tags, er det typisk at lægge branding indhold, for eksemple logo, tagline, osv. En navigation bar kan også ligger i header, eller det kan ligge et andet sted på hjemmesiden. En navigation bar er lavet fra nav tags. Nav tags indeholder en masse sæt af links, ikke alle links står under en nav tag. Når du har en masse sæt af links (til navigation af hjemmesiden for eksemple) er det godt lægge dem under nav tags.
+                </p>
+                <p>
+                    På bunden af hjemmesiden, er det typisk at have en footer. En footer indeholder information om hjemmesiden, hvem ejer hjemmesiden, navigation til sider i hjemmesiden, og andet små-information. 
+                </p>
+            </div>
+            <div id="structurelisttitle">
+                <p>
+                    Imellem en header og footer ligger der nogle tags, som hjælper med opdele indholdet. 
+                </p>
+            </div>
+            <div id="structurelist">
+                <dl>
+                    <dt>
+                        Main &lt;main&gt;
+                    </dt>
+                        <dl>
+                            Alt hovedindhold skal ligge under en main tag. Det er her, hvor du lægger budskabet af hjemmesiden.
+                        </dl>
+                    <dt>
+                        Section &lt;section&gt;
+                    </dt>
+                        <dl>
+                            Sectioner er brugt når der er noget indhold, som er separat fra de andre, men stadig relevant til resten af informationen på hjemmesiden. 
+                        </dl>                    
+                    <dt>
+                        Article &lt;article&gt;
+                    </dt>
+                        <dl>
+                            Når indholdet er independent fra resten af hjemmesiden. En blog post er et godt eksempel.
+                        </dl>
+                    <dt>
+                        Aside &lt;aside&gt;
+                    </dt>
+                        <dl>
+                            Som er brugt til en side bar på en hjemmeside. Aside tag indeholder information som kan grupperes sammen, men ikke passer med flow af main information
+                        </dl>
+                    <dt>
+                        Division &lt;div&gt;
+                    </dt>
+                        <dl>
+                            Til andre grupperingstyper, bruges mest til at organisere elements, billeder, videoer, osv. 
+                        </dl>
+                </dl>
+            </div>
+            
+            <div id="semantisk">
+                <h2>
+                    Semantisk Tags el. Semantisk Elementer
+                </h2>
+            </div>
+            <div id="semantisktext">
+                <p>
+                    Semantisk elements eller tags har klart defineret indhold. Hvilket betyder, at hvad der står, er hvad det er. Det giver mening til browseren og udvikleren. 
+                </p>
+            </div>
+            <div id="semantisklist">
+                <ul>
+                    <li>&lt;header&gt; er hovedet</li>
+                    <li>&lt;footer&gt; er fødderne af hjemmeside</li>
+                    <li>&lt;table&gt; er tabel af information</li>
+                    <li>&lt;img&gt; er et image eller billeder</li>
+                    <li>&lt;form&gt; er en form</li>
+                </ul>
+            </div>
+            
+            <div id="nonsemantisk">
+                <h2>
+                    Non-Semantisk Tags
+                </h2>
+            </div>
+            <div id="nonsemantisktext">
+                <p>
+                    Non-semantisk tags fortæller ingenting om indholdet. Der er ingen mening med non - semantisk tags. Der er ingen klarhed om information, som ligger under non-semantisk tags. 
+                </p>
+            </div>
+            <div id="nonsemantisklist">
+                <ul>
+                    <li>&lt;div&gt;</li>
+                    <li>&lt;span&gt;</li>
+                </ul>
+            </div>
+           
+            <div id="tags">
+                <h3>
+                    List af Fælles Tags
+                </h3>
+            </div>
+            <div id="tagslist">
+                <ul>
+                    <li>&lt;a&gt; er til en hyperlink </li>
+                    <li>&lt;article&gt; til en artikel </li>
+                    <li>&lt;aside&gt; indhold på siden fra hovedindholdet</li>
+                    <li>&lt;body&gt; kroppen af hjemmesiden</li>
+                    <li>&lt;br&gt; en enkelt linje break</li>
+                    <li>&lt;dd&gt; beskrivelse af en begreb i en Beskrivelsesliste</li>
+                    <li>&lt;div&gt; en section af et dokument</li>
+                    <li>&lt;dl&gt; en beskrivelsesliste</li>
+                    <li>&lt;dt&gt; et begreb til en beskrivelsesliste</li>
+                    <li>&lt;footer&gt; en footer til et dokument eller sektion</li>
+                    <li>&lt;form&gt; skaber en HTML form til bruger</li>
+                    <li>&lt;h1&gt; til &lt;h6&gt; HTML headings, h1 er den største og h6 er den mindste heading. 
+                    </li>
+                    <li>&lt;header&gt; en header til et dokument eller sektion</li>
+                    <li>&lt;img&gt; et billede</li>
+                    <li>&lt;li&gt; en liste vare	</li>
+                    <li>&lt;main&gt; hovedindholdet til et dokument</li>
+                    <li>&lt;nav&gt; navigations links</li>
+                    <li>&lt;ol&gt; en organiseret liste</li>
+                    <li>&lt;p&gt; en paragraf</li>
+                    <li>&lt;section&gt; en sektion </li>
+                    <li>&lt;ul&gt; en uorganiseret liste</li>
+                </ul>
+            </div>
+            
+            
+            <footer class="footer" 
+                    id="pagefooter">
+               <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

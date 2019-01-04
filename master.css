@@ -1,0 +1,262 @@
+/*  FONTS  */
+
+h1 {
+    font-family: 'Averia Libre', cursive;         
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+h2 {
+    font-family: 'Averia Libre',  cursive;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Averia Libre', cursive;
+    
+    font-weight: 300;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 25px;
+}
+
+dl, ol, ul, i {
+    font-family: 'Raleway', sans-serif;
+}
+
+dt {
+    font-weight: 700;
+}
+
+
+
+/*  SOURCES  */
+
+figcaption {
+    font-family: 'Raleway', sans-serif;  
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #233237;
+    font-style: italic;
+    text-align: center;
+    padding-right: 5px;
+    font-size: 12px;
+
+}
+
+a:hover {
+    color: #984B43
+}
+
+/*  PAGE  */
+
+.page {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+h1 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 20px;
+    }
+    
+    @supports (display: grid) {
+    h1:before,
+    h1:after {
+        content: "";
+        align-self: center;
+        border-top: 8px double #233237;
+    }
+}
+
+/*  PICTURES GENERAL  */
+
+#newstri {
+    text-align: center;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.images {
+    text-align: center;
+}
+
+
+/*  PICTURES WITH HOVER  */
+
+/* CSS for Picture Hover */
+
+/* MOBILE */
+
+.img-overlay img {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  object-fit:fill;  
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(41, 42, 44, 0.5);
+  justify-content: center;
+  align-items: center;
+    font-family: 'Averia Libre',  cursive;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+.img-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.img-overlay:hover .overlay {
+  display: flex;
+}
+
+/*  TABLET  */
+
+@media screen and (min-width:500px) {
+
+    .img-overlay img {
+      position: relative;
+      vertical-align: top;
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+    }
+
+    .overlay {
+      display: none;
+      position: absolute;
+      color: #fff;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(41, 42, 44, 0.5);
+      justify-content: center;
+      align-items: center;
+        font-family: 'Averia Libre',  cursive;
+        text-align: center;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+
+    .img-overlay {
+      position: relative;
+      display: inline-block;
+    }
+
+    .img-overlay:hover .overlay {
+      display: flex;
+    }
+}
+
+/*  DESKTOP  */
+
+@media screen and (min-width:1000px) {
+
+    .img-overlay img {
+      position: relative;
+      vertical-align: top;
+   
+    }
+
+    .overlay {
+      display: none;
+      position: absolute;
+      color: #fff;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(41, 42, 44, 0.5);
+      justify-content: center;
+      align-items: center;
+        font-family: 'Averia Libre',  cursive;
+        text-align: center;
+        font-weight: 400;
+        font-size: 70px;
+    }
+
+
+    .img-overlay {
+      position: relative;
+      display: inline-block;
+    }
+
+    .img-overlay:hover .overlay {
+      display: flex;
+    }
+/* TO DESIGN LANDING PAGE */
+    .bottom {
+        align-self: start;
+        padding-top: 200px;
+
+    }
+    #fartspan {
+        padding-top: 185px;
+    }
+
+    .top {
+        align-self: start;
+        padding-top: 50px;
+    }
+    
+    /*  MAIN LANDING PAGE  */
+    
+    #webudvikling, #onmarketing, #projekter, #mig, #designfront, #kommun {
+        font-size: 30px;
+    }
+    
+    /* WEB DESIGN PAGE */
+    
+    #htmlhover, #csshover, #internethover, #responhover, #iahover, #wrkhover {
+        font-size: 30px;
+    }
+    
+}
+
+
+#seo, #ia {
+    align-self:center;
+}
+
+#html, #css {
+    align-self: end;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        
+    </head>
+    <body class="page">
+        <div id="pagewrap">
+        
+            <header class="header" 
+                    id="pageheader">
+                <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+
+        </div>
+        
+    </body>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</html>

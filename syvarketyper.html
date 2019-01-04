@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewrapsyv">
+        
+            <header class="header" 
+                    id="pageheader">
+                <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+            
+            <div id="title">
+                <h1>
+                    De Syv Arketyper
+                </h1>
+            </div>
+        
+            <div id="arklist">
+                <ol>
+                    <li>
+                        <h3>Digitale Købmand</h3>
+                        <p>Har en fysisk butik men supplerer med salg via internettet.</p>
+                    </li>
+                    <li>
+                        <h3>Webshoppen</h3>
+                        <p>Butikken ligger kun på internettet, og sælger direkte til forbrugerere. </p>
+                    </li>
+                    <li>
+                        <h3>Digitale Producent</h3>
+                        <p>Udvider sine fysiske produkter med digitale tjenester (IOT - Internet of Things)</p>
+                    </li>
+                    <li>
+                        <h3>Software Porucenten</h3>
+                        <p>Bygger software med licens/direkte betaling
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Digitale Platformsbygger</h3>
+                        <p>Bygger deres egen platform på nettet
+                        </p>
+                    </li>
+                    <li>
+                        <h3>App Opfinderen</h3>
+                        <p>Bygger app som dækker behovet.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Wiki-Skaberen</h3>
+                        <p>Brugeren er både skaberen samt forbrugeren af indholdet.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            
+            <div id="arkpdf"
+                 class="images">
+                <a href="PDF/arketyper.pdf"
+                   id="pdfpic">
+                    <img src="PIX/pdf_icon.png"
+                     alt="PDF Icon">
+                </a>
+                <figcaption>En PDF om de syv arketyper</figcaption>
+            </div>
+            
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

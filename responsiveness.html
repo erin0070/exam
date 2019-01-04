@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewraprespond">
+        
+            <header class="header" 
+                    id="pageheader">
+               <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+        
+            <div id="title">
+                <h1>
+                    Flexbox VS Grids
+                </h1>
+            </div>
+            <div id="flexy">
+                    <h3 id="flextitle">
+                        FlexBox
+                    </h3>
+                    <p>
+                        One dimensional
+                        <br>
+                        Basis in Content
+                        <br>
+                        Goes from left to Right
+                    </p>
+            </div>
+            <div id="gridy">
+                    <h3 id="gridtitle">
+                        Grids
+                    </h3>
+                    <p>
+                        Two dimensional
+                        <br>
+                        Basis in layout
+                        <br>
+                        Better making whole page layouts
+                        <br>
+                        Uses less media query intervention
+                    </p>
+            </div>
+            <div id="vspic"
+                 class="images">
+                <img src="PIX/flexbox_vs_grids.JPG"
+                     alt="FlexBox versus Grids Example"
+                     class="responsive"
+                     id="fvsg">
+                <figcaption>
+                    <a href="https://dev.to/ssalka/pixels-are-tech-debt-2570">Kilder</a>
+                </figcaption>
+            </div>
+
+            <div id="hvadgrid">
+                <h2>
+                    Hvad er Grids?
+                </h2>
+            </div>
+            <div id="hvadgridtext">    
+                <p>
+                    Det er et grid system, med rækker og kolonner. Elementer kan blive placeret i bestemte steder, der er ingen grund til at bruge floats eller positionering. Grids gør designet af hjemmesiden mere dynamisk. Men Grids og Flexbox virker rigtigt godt sammen med hinanden, og det er bedst at bruge begge på en hjemmesiden.
+                </p>
+            </div>
+            <div id="hvadgridpic"
+                 class="images">
+                <img src="PIX/grids_example.JPG"
+                     alt="Grids Coding Example"
+                     class="responsive"
+                     id="gridexample">
+            </div>
+            
+            <div id="hvadgridpic2"
+                 class="images">
+                <img src="PIX/grids_example_two.jpg"
+                     alt="Grids Coding Example Two"
+                     class="responsive"
+                     id="gridexample2">
+            </div>
+            
+            <div id="responsiveness">
+                <h2>
+                    Responsiveness
+                </h2>
+            </div>
+            <div id="responsivenesstext">
+                <p>
+                    Nu er det vigtig at fokusere på responsiveness i webdesign. Mobiltelefonen bliver vigtigere og vigtigere i vores hverdag, tablets bliver mere og mere populære end bærbar computere. Det betyder for webdesigners, at tænke i mere end én skærmstørrelse. 
+                </p>
+                <p>
+                    Der er så mange mobiler nu, og mange kunders første introduktion til en hjemmeside er på deres mobil. Så det er vigtigt at planlægge en hjemmesiden, først på mobil. Derfra kan hjemmesiden opskaleres til andre skærmstørrelser. 
+                </p>
+            </div>
+            <div id="statisk">
+                <h3>
+                    Statisk Webdesign
+                </h3>
+                <p>
+                    En statisk webdesign har et faste bredde, og der skiftes ikke til forskellige skærmstørrelser. På mobil er det typisk at zoome ind på siden. Design til hjemmesiden har mere kontrol over siden og resultatet. Det er ikke det bedste til brugere i dag. 
+                </p>
+            </div>
+            <div id="fluid">
+                <h3>
+                    Fluid Webdesign
+                </h3>
+                <p>
+                    Med fluid webdesign, tilpasser elementer på siden sig til bredden af skærmen. Bredde angiver procent til at give det relativitet. Problemet er, at elementer kan bliver meget smalle og der er en grænser for hvor småt det kan blive. Designers, specielt hvis de er æstetisk orienterede designers taber kontrollen over hjemmesiden, men det er ofte bedre til hjemmesidens bruger. 
+                </p>
+            </div>
+            <div id="respon">
+                <h3>
+                    Responsive Webdesign
+                </h3>
+                <p>
+                    Dagens standard er nu responsive design, fordi der er så mange forskellige skærmstørrelse en hjemmeside skal have i tankerne. Det er typisk et fluid layout i responsive design, men der er meget mere grund til planlægning her, end fluid eller statisk design. Kode er brugt til at ændre layout til hver skærmstørrelse ( @media ), og de samme HTML og CSS filer er brugt, uanset siden. Responsive webdesign er mobile first.
+                </p>
+            </div>
+            <div id="adapt">
+                <h3>
+                    Adaptive Webdesign
+                </h3>
+                <p>
+                    Forskellen mellem responsive og adaptive designs er, at adaptive designs har mange static layouts til forskellige skærme ( @mediequereis ). Det er ikke fluid. Når en side skifter størrelse, er det et skarpt brud, det er ikke flydende ligesom et responsive design. Typisk kommer der for lidt, eller for meget, hvidrum på skærme som ikke rammer breakpoints. Dermed at adaptive webdesign er typisk mobile last. 
+                </p>
+            </div>
+            <div id="responvsadapt"
+                 class="images">
+                <img src="PIX/response_vs_adapt.jpg"
+                     alt="Grids Coding Example Two"
+                     class="responsive"
+                     id="gridexample2">
+                <figcaption>
+                    <a href="https://imperialwebdesign.in/adaptive-responsiple-webdesign/">Kilder</a>
+                </figcaption>
+            </div>
+            
+            
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

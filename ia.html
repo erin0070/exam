@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewrapia">
+        
+            <header class="header" 
+                    id="pageheader">
+               <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+            
+            <div id="title">
+                <h1>
+                        Information Arkitektur
+                </h1>
+            </div>
+            <div id="iapicture"
+                 class="images">
+                <img src="PIX/information_archietecture.JPG"
+                         alt="Information Archietecture Diagram"
+                         class="responsive"
+                         id="iadiagram">
+                <figcaption>
+                        <a href="https://uxdesign.cc/a-brief-history-of-information-architecture-d26b17205e7b">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="ialist">
+                <p>
+                        Information arkitektur er:
+                </p>
+                <ol type="1">
+                    <li>The structural design of shared information environments.</li>
+                    <li>The art and science of organizing and labeling websites, intranets, online communities and software to support usability and findability.</li>
+                    <li>An emerging community of practice focused on bringing principles of design and architecture to the digital landscape</li>
+                </ol>
+            </div>
+            <div id="latch">
+                    <h2>
+                        LATCH
+                    </h2>
+            </div>
+            <div id="latchpicture"
+                 class="images">
+                    <img src="PIX/latch.JPG"
+                         alt="Latch Section Title"
+                         class="responsive"
+                         id="latchpic">
+                    <figcaption>
+                        <a href="http://www.humantific.com/tag/information-design/page/2/">Kilder</a>
+                    </figcaption>
+            </div>
+            <div id="lacthtext">
+                    <p>
+                        LATCH er fem måder at organisere information. Det står for Location, Alphabet, Time, Category, og Hierarchy. Det blev opfundet af Richard Saul Wurman i hans bog “Information Anxiety.
+                    </p>
+                    <p>
+                        “Information may be infinite, however… the organization of information is finite as it can only be organized by LATCH: Location, Alphabet, Time, Category, or Hierarchy. I’ve tried a thousand times to find other ways to organize, but I always end up using one of these five.” - Wurman
+                    </p>
+            </div>
+            <div id="latchlist">
+                    <ul>
+                        <li><strong>Location:</strong>brugen af geografi og topologi.</li>
+                        <li><strong>Alphabet:</strong> brugen af alfabet (det er godt at huske, at alle i verden har det samme alfabet).</li>
+                        <li><strong>Time:</strong>brugen af en tidslinje (fra et tidspunkt til en anden tidspunkt).</li>
+                        <li><strong>Category:</strong>opsamling af ting som passer til hinanden (ting som er røde, ting som er grønne).</li>
+                        <li><strong>Hierarchy:</strong> bruge organiserende information om størrelse, pris, popularitet (fra Wurman) men man kan også organisere med organisationsstruktur eller taksonomi. </li>
+                    </ul>
+                </div>
+            
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

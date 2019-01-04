@@ -1,0 +1,91 @@
+/* MOBIL */
+#pagewrap {
+    width: 100%;
+}
+
+body {
+    font: black;
+}
+#pageheader {
+    grid-area: hd;
+}
+
+#ps {
+    grid-area: ps;
+}
+
+#fart {
+    grid-area: fart;
+}
+
+#foto {
+    grid-area: foto;
+}
+
+#ill {
+    grid-area: ill;
+}
+
+#gest {
+    grid-area: gest;
+}
+
+#pagefooter {
+    grid-area: ft;
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ps ill'
+            'gest gest'
+            'foto fart'
+            'ft ft';
+    }
+    
+    .responsive2 {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        overflow: hidden;
+      
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (4 1fr);
+        grid-template-areas: 
+            'hd hd hd hd'
+            'ps ps ill ill'
+            'ps ps ill ill'
+            'foto foto fart fart'
+            'foto foto fart fart'
+            'ft ft ft ft';
+    }
+    
+    #pagewrap >a:nth-child(6) {
+        grid-column: 2/4;
+        grid-row: 3/5;
+        width: 100%;
+    }
+    
+    #ill, #fart {
+        text-align: right;
+    }
+    
+    #gest {
+        border: 10px solid;
+        border-color: white;
+    }
+}

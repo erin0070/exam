@@ -1,0 +1,149 @@
+/* MOBIL */
+#pagewraplanding {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'hd'
+        'komm'
+        'des'
+        'webud'
+        'onmark'
+        'proj'
+        'q'
+        'ommig'
+        'ft';
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+    
+}
+#pageheader {
+    grid-area: hd;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#elglogo {
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+#logo {
+    margin-right: 70px;
+}
+#quote {
+    grid-area: q;
+    border: 5px solid #18121E;
+}
+
+#quotetext {
+    font-family: 'Averia Libre', cursive;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+#komm {
+    grid-area: komm;
+   /* background-image: url(../PIX/komm.jpg);*/
+}
+
+#des {
+    grid-area: des;
+   /* background-image: url(../PIX/design.jpg);  */  
+}
+
+#webud {
+    grid-area: webud;
+    /*background-image: url(../PIX/web.jpg);*/
+}
+
+#onmark {
+    grid-area: onmark;
+    /*background-image: url(../PIX/onmark.jpg)*/
+}
+
+#proj {
+    grid-area: proj;
+}
+
+#ommig {
+    grid-area: ommig;
+}
+
+#pagefooter {
+    grid-area: ft;
+}
+
+.class {
+    height: 100%;
+    width: auto;
+}
+/* TABLET */
+@media screen and (min-width: 500px) {
+   
+    #pagewraplanding {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'komm des'
+            'komm webud'
+            'proj ommig'
+            'onmark ommig'
+            'q q'
+            'ft ft';
+    } 
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+    #pagewraplanding {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat (7 1fr);
+        grid-template-areas: 
+            'hd hd hd hd hd hd hd'
+            '. . . . . . .'
+            '. komm des q q proj .'
+            '. komm onmark ommig webud webud .'
+            'ft ft ft ft ft ft ft';
+       
+    }
+    
+    .responsive {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    
+    #webudpic {
+        height:225px;
+    }
+    
+    #onmarkpic {
+        
+        width: 100%;
+        height: 225px;
+    }
+}
+    
+}

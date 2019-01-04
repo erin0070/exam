@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" 
+              rel="stylesheet">
+        <link rel="stylesheet" 
+              href="CSS/master.css">
+       <link rel="stylesheet" 
+             href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+    </head>
+    <body class="page">
+        <div id="pagewraparticle">
+        
+            <header class="header" 
+                    id="pageheader">
+                <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+            <div class="text"
+                 id="article">
+                <h1>
+                    ARTIKLEN
+                </h1>
+                <p>
+                    “Grundlæggende er den klassiske artikel en samlet betegnelse for en kortere, afsluttet, selvstændig behandling af et emne, som kan stå i en avis, et tidsskrift, et nyhedsmedie online osv.” (Fra kommunikation bog) Nyhedsartikler er normalt om aktuelle eller seneste nyheder. Det kan være om generelt liv (daglig avisen), eller om et specifik fag (møde blad, videnskabs hjemmesider, osv)
+                </p>
+            </div>
+            
+            <div class="text"
+                 id="news">
+                <h2>
+                    NYHEDSTREKANT
+                </h2>
+            </div>
+            <div id=new>
+                <p>
+                   Nyhedstrekanten er en måde til at strukturere indhold på i artiklen. Nyhedsartiklen er oftest til objektive artikler. Den vigtigste er hovedbudskab. Det forklarer hvad og hvem artiklen er om, overskrift er også en del af hovedbudskabet. Introduktion og et resume af artiklen kan også placeres i hovedbudskab eller uddybning af hovedbudskab.  
+                </p>
+                <p>
+                    Næste trin er præmisser eller baggrund. Det forklarer hvor, hvornår og hvordan data i artiklen. Det er mellem vigtigt. Sidste trin, som er mindst vigtig er detaljerne. Detaljer understøtter hovedbudskab. Indstillinger, årstale, osv er en del af detaljer. 
+                </p>
+            </div>
+            <div id=newstri>
+                <img src="PIX/nyhedstrekant.png"
+                     alt="Nyhedstrekant"
+                     class="responsive"
+                     id="newstri">
+                <figcaption>
+                    <a href="https://aroskurser.dk/videnscenter/nyhedstrekanten-hvad-er-en-nyhedstrekant/"
+                       class="sources">Kilder</a>
+                </figcaption>
+            </div>
+            
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

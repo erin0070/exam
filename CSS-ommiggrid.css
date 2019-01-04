@@ -1,0 +1,86 @@
+/* MOBIL */
+#pagewrap {
+    width: 100%;
+}
+
+#pageheader {
+    grid-area: hd;
+}
+
+#picleft {
+    grid-area: pl;
+    display: none;
+}
+
+#midpic {
+    grid-area: mp;
+}
+
+#picright {
+    grid-area: pr;
+    display: none;
+}
+
+#text {
+    grid-area: tx;
+}
+
+#links {
+    grid-area: links;
+}
+
+#pagefooter {
+    grid-area: ft;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd hd'
+            '. mp .'
+            'tx tx tx'
+            '. links .'
+            'ft ft ft';
+    } 
+    
+    #picleft, #picright {
+        display: none;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+    
+    #pagewrap {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat (3 1fr);
+        grid-template-areas: 
+            'hd hd hd'
+            'pl mp pr'
+            'tx tx tx'
+            '. links .'
+            'ft ft ft';
+    }
+    
+    #picleft, #picright {
+        display:contents;
+        align-self: end;
+        margin: none;
+    }
+  
+    #dog {
+        grid-area: pr;
+        align-self: end;
+        float: right;
+    }
+    
+    #kids {
+        grid-area: pl;
+        align-self: end
+    }
+}

@@ -1,0 +1,88 @@
+/* MOBIL */
+#pagewrap {
+    width: 100%;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+#logo {
+    float: right;
+    width: 125px;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 30px;
+  float: right;
+    
+}
+
+.sidepanel a {
+  width: 210px;
+  padding: 4px 4px 4px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #18121E;
+  display: block;
+  transition: 0.3s;
+  font-family: 'raleway';
+
+}
+
+.sidepanel a:hover {
+  color: #233237;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  font-size: 36px;
+  padding-left: 15px;
+    
+}
+
+.openbtn {
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #18121E;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 15px;
+
+}
+
+.openbtn:hover {
+  background-color:#233237;
+}
+
+@media screen and (min-width:600px) {
+   
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo {
+        order: 2;
+        flex-grow: 2;
+        text-align: center;
+    }
+    #mySidepanel {
+        order: 1;
+        float: left;
+        align-self:flex-start;
+    }
+}
+

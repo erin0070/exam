@@ -1,0 +1,2432 @@
+/*  ARTICLE PAGE  -----------------------------------------*/
+
+#pagewraparticle {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'hd'
+        'art'
+        'news'
+        'new'
+        'pic'
+        'ft';
+}
+
+header {
+    grid-area: hd;
+}
+
+footer {
+    grid-area: ft;
+}
+
+#article {
+    grid-area: art;
+}
+
+#new {
+    grid-area: new;
+}
+
+#news {
+    grid-area: news;
+}
+
+#newstri {
+    grid-area: pic;
+}
+
+/* ARTICLE PAGE TABLET */
+@media screen and (min-width: 500px) {
+    
+    #pagewraparticle {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'art art'
+            'news news'
+            'new new'
+            'pic pic'
+            'ft ft';
+    } 
+
+    #newstri {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #pagewraparticle {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'art art'
+            'news news'
+            'new pic'
+            'ft ft';
+    } 
+}
+
+/*  BUSINESS MODEL CANVAS PAGE ------------------------------- */
+
+#pagewrapbmc {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'hd'
+        'ti'
+        'virk'
+        'bu'
+        'bumoca'
+        'pic'
+        'bmc'
+        'ft';
+}
+
+header {
+    grid-area: hd;
+}
+
+footer {
+    grid-area: ft;
+}
+
+#title {
+    grid-area: ti;
+}
+
+#virk {
+    grid-area: virk;
+}
+
+#bumo {
+    grid-area: bu;
+}
+
+#bumoca {
+    grid-area: bumoca;
+}
+
+#bmcpic {
+    grid: pic;
+    align-content: center;
+    text-align: center;
+}
+
+#bmctext {
+    grid-area: bmc
+}
+
+/* BMC PAGE TABLET */
+@media screen and (min-width: 1000px) {
+
+    #pagewrapbmc {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'virk .'
+            'bu bu'
+            'bumoca bumoca'
+            'pic pic'
+            'bmc bmc'
+            'ft ft';
+    } 
+}
+
+/*  USER TEST PAGE ---------------------------------------------*/
+
+
+header {
+    grid-area: hd;
+}
+
+footer {
+    grid-area: ft;
+}
+
+#title {
+    grid-area: ti;
+}
+
+#viden {
+    grid-area: vi;
+}
+
+#subtitle {
+    grid-area: st;
+}
+
+#data {
+    grid-area: data
+}
+
+#datapic {
+    grid-area: dp;
+}
+
+#gangster {
+    grid-area: gang;
+}
+
+#gangsterpic {
+    grid-area: gp;
+}
+
+#kort {
+    grid-area: kort;
+}
+
+#kortpic {
+    grid-area: kp;
+}
+
+#list {
+    grid-area: list;
+}
+
+#list2 {
+    grid-area: li2;
+}
+    
+#pagewrapbruger {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'hd'
+        'ti'
+        'vi'
+        'split'
+        'st'
+        'data'
+        'dp'
+        'gang'
+        'gp'
+        'li'
+        'li2'
+        'kort'
+        'kp'
+        'ft';
+}
+
+/* BRUGER TEST PAGE TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrapbruger {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'vi vi'
+            'split split'
+            'st st'
+            'data data'
+            'dp dp'
+            'gp gang'
+            'list li2'
+            'kort kp'
+            'ft ft';
+    } 
+    
+    #gangsterpic, #datapic, #kortpic {
+        align-content: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    #kortpic {
+        margin-top: 50px;
+    }
+    
+    #li {
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #pagewrapbruger {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'vi vi'
+            'split split'
+            'st st'
+            'data dp'
+            'gp gang'
+            'list li2'
+            'kort kp'
+            'ft ft';
+    } 
+}
+
+/*  CSS PAGE -------------------------------------------*/
+
+#css {
+    grid-area: css;
+}
+
+#inlinecss {
+    grid-area: inli;
+}
+
+#internpic {
+    grid-area: internpic;
+}
+
+#externpic {
+    grid-area: expic;
+    margin-bottom: 20px;
+}
+
+#syntax {
+    grid-area: syn;
+    border-top: 10px double;
+    border-color: #EAC67a;
+    padding-top: 15px;
+}
+
+#syntaxtext {
+    grid-area: syntext;
+}
+
+#syntaxpic {
+    grid-area: syntaxpic;
+}
+
+#psuedo {
+    grid-area: psu;
+    margin-top: 25px;
+}
+
+#psuedopic {
+    grid-area: psupic;
+    margin-top: 25px;
+}
+
+#cascad {
+    grid-area: cas;
+}
+
+#caspic {
+    grid-area: caspic;
+    justify-content: center;
+    margin-top: 70px;
+}
+    
+#title, #inlinecss, #internpic, #externpic, #syntaxpic, #selectors, #psuedopic, #caspic {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+}
+
+
+/* CSS PAGE TABLET */
+    
+@media screen and (min-width: 500px) {
+    #pagewrapcss {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'css css'
+            'inli inli'
+            'internpic internpic'
+            'expic expic'
+            'syn syn'
+            'syntext syntext'
+            'syntaxpic syntaxpic'
+            'psu psu'
+            'psupic psupic'
+            'cas cas'
+            'caspic caspic'
+            'ft ft';
+    }
+    
+    #title, #inlinecss, #internpic, #externpic, #syntaxpic, #selectors, #psuedopic, #caspic {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }    
+}
+    
+@media screen and (min-width: 1000px) {
+    #pagewrapcss {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'css css'
+            'inli internpic'
+            'expic expic'
+            'syn syn'
+            'syntext syntext'
+            'syntaxpic syntaxpic'
+            'psupic psu'
+            'cas caspic'
+            'ft ft';
+    }
+    
+    #title, #inlinecss, #internpic, #externpic, #syntaxpic, #selectors, #psuedopic, #caspic {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+     
+    #inlinecss {
+        margin-top: 40px;
+    }
+}
+
+/*  FACEBOOK PAGE --------------------------------*/
+
+#prof {
+    grid-area: prof;
+}
+
+#algor {
+    grid-area: algor;
+}
+
+#ap {
+    grid-area: ap;
+}
+
+#boost {
+    grid-area: boost;
+}
+
+#list {
+    grid-area: list;
+}
+
+#tid {
+    grid-area: tid;
+}
+
+#tidpic {
+    grid-area: tidpic;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#takeaway {
+    grid-area: takeaway;
+    text-align: center;
+    border-bottom: 5px double;
+    border-top: 5px double;
+    margin-bottom: 15px;
+    border-color: #EAC67A;
+}
+
+#source {
+    grid-area: source;
+}
+
+i {
+    padding-right: 15px;
+}
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrapfb {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+            'hd hd hd'
+            'ti ti ti'
+            'prof algor algor'
+            'prof ap ap'
+            'boost tid tid'
+            'list tidpic tidpic'
+            'takeaway takeaway takeaway'
+            'source source source'
+            'ft ft ft';
+    }
+    
+    #source{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #pagewrapfb {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+            'hd hd hd'
+            'ti ti ti'
+            'prof algor algor'
+            'prof ap ap'
+            'boost tid tidpic'
+            'list tid tidpic'
+            'takeaway takeaway takeaway'
+            'source source source'
+            'ft ft ft';
+    }
+}
+
+/*  COLOR TYPOGRAPHY PAGE ------------------------- */
+
+#colortitle {
+    grid-area: colortitle;
+}
+
+#colorwheel {
+    grid-area: colorwheel;
+    margin-top: 20px;
+}
+
+#colortext {
+    grid-area: colortext;
+}
+
+#colortextend {
+    grid-area: colortextend;
+    margin-top: -30px;
+}
+
+#rumtitle {
+    grid-area: rumtitle;
+}
+
+#rumpic {
+    grid-area: rumpic;
+    margin-top: 20px;
+}
+
+#rumtext {
+    grid-area: rumtext;
+}
+
+#psytitle {
+    grid-area: psytitle;
+}
+
+#psypic {
+    grid-area: psypic;
+}
+
+#typotitle {
+    grid-area:typotitle;
+}
+
+#typgen {
+    grid-area:typgen;
+}
+
+#typotext {
+    grid-area:typotext;
+}
+
+#typolist {
+    grid-area: typolist;
+}
+#skrifttitle {
+    grid-area:skrifttitle;
+}
+
+#skrifttext {
+    grid-area:skrifttext;
+}
+
+#skriftpic {
+    grid-area:skriftpic;
+}
+
+#command {
+    grid-area:command;
+}
+
+#sersan {
+    grid-area:sersan;
+}
+
+#seriftext {
+    grid-area:seriftext;
+}
+
+#serifpics {
+    grid-area:serifpics;
+}
+
+#sanseriftext {
+    grid-area:sanseriftext;
+}
+
+#sanserifpics {
+    grid-area:sanserifpics;
+}
+
+#practicetext {
+    grid-area:practicetext;
+}
+
+#ghosts {
+    grid-area:ghosts;
+}
+
+#subtitle {
+    border: none;
+}
+
+#undertext {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+#colorwheel, #rumpic, #psypic, #typgen, #skriftpic, #command, #serifpics, #sanserifpics, #ghosts {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+    
+/*  TABLET SIZE  */
+@media screen and (min-width: 500px) {
+    #pagewrapft {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'colortitle colortitle'
+            'colortext colortext'
+            'colorwheel colorwheel'
+            'colortextend colortextend'
+            'rumtitle rumtitle'
+            'rumtext rumtext'
+            'rumpic rumpic'
+            'psytitle psytitle'
+            'psypic psypic'
+            'typotitle typotitle'
+            'typgen typgen'
+            'typotext typolist'
+            'skrifttitle skrifttitle'
+            'skrifttext skrifttext'     
+            'skriftpic skriftpic'
+            'command command'
+            'sersan sersan'
+            'seriftext seriftext'
+            'serifpics serifpics'
+            'sanseriftext sanseriftext'
+            'sanserifpics sanserifpics'
+            'practicetext practicetext'
+            'ghosts ghosts'
+            'ft ft';
+    }
+    
+    #seriftext, #sanseriftext, #practicetext {
+        text-align: center;
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapft {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'colortitle colortitle'
+            'colorwheel colortext'
+            'colortextend colortextend'
+            'rumtitle rumtitle'
+            'rumtext rumpic'
+            'psytitle psytitle'
+            'psypic psypic'
+            'typotitle typotitle'
+            'typgen typgen'
+            'typotext typolist'
+            'skrifttitle skrifttitle'
+            'skrifttext skriftpic'
+            'command command'
+            'sersan sersan'
+            'seriftext seriftext'
+            'serifpics serifpics'
+            'sanseriftext sanseriftext'
+            'sanserifpics sanserifpics'
+            'practicetext practicetext'
+            'ghosts ghosts'
+            'ft ft';
+    }
+}
+
+/*  PHOTOGRAPHY PAGE ---------------------------------*/
+
+#focal {
+    grid-area: focal;
+}
+
+#focalpic {
+    grid-area: focalpic;
+}
+
+#focaltext {
+    grid-area: focaltext;
+}
+
+#shutter {
+    grid-area: shutter;
+}
+
+#shutterpic {
+    grid-area: shutterpic;
+}
+
+#shuttertext {
+    grid-area: shuttertext;
+}
+
+#aper {
+    grid-area: aper;
+}
+
+#aperpic {
+    grid-area: aperpic;
+}
+
+#apertext {
+    grid-area: apertext;
+}
+
+#iso {
+    grid-area: iso;
+}
+
+#isopic {
+    grid-area: isopic;
+}
+
+#isotext {
+    grid-area: isotext;
+}
+
+#expo {
+    grid-area: expo;
+}
+
+#expopic {
+    grid-area: expopic;
+}
+
+#expotext {
+    grid-area: expotext;
+}
+
+#dyb {
+    grid-area: dyb;
+}
+
+#dybpic {
+    grid-area: dybpic;
+}
+
+#dybtext {
+    grid-area: dybtext;
+}
+
+#expopic2 {
+    grid-area: expopic2;
+}
+
+.images {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrapfoto {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'focal focal'
+            'focalpic focaltext'
+            'shutter shutter'
+            'shuttertext shutterpic'
+            'aper aper'
+            'aperpic apertext'
+            'iso iso'
+            'isotext isopic'
+            'expo expo'
+            'expotext expotext'
+            'expopic expopic2'
+            'dyb dyb'
+            'dybpic dybtext'
+            'ft ft';
+    }
+}
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapfoto {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'focal focal'
+            'focalpic focaltext'
+            'shutter shutter'
+            'shuttertext shutterpic'
+            'aper aper'
+            'aperpic apertext'
+            'iso iso'
+            'isotext isopic'
+            'expo expo'
+            'expotext expotext'
+            'expopic expopic2'
+            'dyb dyb'
+            'dybpic dybtext'
+            'ft ft';
+    }
+    
+}
+
+/*  GESTALT PAGE ----------------------------- */
+
+
+#gestalt {
+    grid-area: gestalt;
+}
+
+#gestalttext {
+    grid-area: gestalttext;
+}
+
+#clos {
+    grid-area: clos;
+}
+
+#clospanda {
+    grid-area: clospanda;
+}
+
+#closshoe {
+    grid-area: closshoe;
+}
+
+#clostext {
+    grid-area: clostext;
+}
+
+#prox {
+    grid-area: prox;
+}
+
+#proxdot {
+    grid-area: proxdot;
+}
+
+#proxdots2 {
+    grid-area: proxdots2;
+}
+
+#proxtext {
+    grid-area: proxtext;
+}
+
+#isopic {
+    grid-area: isopic;
+}
+
+#cont {
+    grid-area: cont;
+}
+
+#contdot {
+    grid-area: contdot;
+}
+
+#conth {
+    grid-area: conth;
+}
+
+#conttext {
+    grid-area: conttext;
+}
+
+#sym {
+    grid-area: sym;
+}
+
+#sympic {
+    grid-area: sympic;
+}
+
+#symtext {
+    grid-area: symtext;
+}
+
+#fg {
+    grid-area: fg;
+}
+
+#fgtree {
+    grid-area: fgtree;
+}
+
+#fgbat {
+    grid-area: fgbat;
+}
+
+#fgtext {
+    grid-area: fgtext;
+}
+
+#sim {
+    grid-area: sim;
+}
+
+#simpic {
+    grid-area: simpic;
+}
+
+#simtext {
+    grid-area: simtext;
+}
+
+#comfa {
+    grid-area: comfa;
+}
+
+#comfapic {
+    grid-area: comfapic;
+}
+
+#comfatext {
+    grid-area: comfatext;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrapgestalt2 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'gestalt gestalt'
+            'gestalttext gestalttext'
+            'clos clos'
+            'clostext clostext'
+            'clospanda closshoe'
+            'prox proxtext'
+            'proxdot proxdots2'
+            'cont cont'
+            'conttext conttext'
+            'conth contdot'
+            'sym sym'
+            'symtext sympic'
+            'fg fg'
+            'fgtext fgtext'
+            'fgtree fgbat'
+            'sim sim'
+            'simtext simpic'
+            'comfa comfa'
+            'comfatext comfapic'
+            'ft ft';
+    }
+} 
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapgestalt2 {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'gestalt gestalt'
+            'gestalttext gestalttext'
+            'clos clos'
+            'clostext clostext'
+            'clospanda closshoe'
+            'prox prox'
+            'proxtext proxtext'
+            'proxdot proxdots2'
+            'cont cont'
+            'conttext conttext'
+            'conth contdot'
+            'sym sym'
+            'symtext sympic'
+            'fg fg'
+            'fgtext fgtext'
+            'fgtree fgbat'
+            'sim sim'
+            'simtext simpic'
+            'comfa comfa'
+            'comfatext comfapic'
+            'ft ft';
+    }
+    
+}
+
+/* HTML PAGE -----------------------------------------*/
+
+#grund {
+    grid-area: grund;
+}
+
+#grundpic {
+    grid-area: grundpic;
+}
+
+#grundtext {
+    grid-area: grundtext;
+}
+
+#grundlist {
+    grid-area: grundlist;
+}
+
+#grundtext2 {
+    grid-area: grundtext2;
+}
+
+#doc {
+    grid-area: doc;
+}
+
+#docpic {
+    grid-area: docpic;
+}
+
+#doctext {
+    grid-area: doctext;
+}
+
+#structure {
+    grid-area: structure;
+}
+
+#structuretext {
+    grid-area: structuretext;
+}
+
+#structurepic {
+    grid-area: structurepic;
+}
+
+#structuretext2 {
+    grid-area: structuretext2;
+    margin-top: -100px;
+}
+
+#structurelisttitle {
+    grid-area: structurelisttitle;
+    padding-top: 80px;
+}
+
+#structurelist {
+    grid-area: structurelist;
+}
+
+#semantisk {
+    grid-area: semantisk;
+}
+
+#semantisktext {
+    grid-area: semantisktext;
+}
+
+#semantisklist {
+    grid-area: semantisklist;
+}
+
+#nonsemantisk {
+    grid-area: nonsemantisk;
+}
+
+#nonsemantisktext {
+    grid-area: nonsemantisktext;
+}
+
+#nonsemantisklist {
+    grid-area: nonsemantisklist;
+}
+
+#tags {
+    grid-area: tags;
+}
+
+#tagslist {
+    grid-area: tagslist;
+    
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewraphtml {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat (5 1fr);
+        grid-template-areas: 
+            'hd hd hd hd hd'
+            'ti ti ti ti ti'
+            'grund grund grund grund grund'
+            '. grundpic grundpic grundpic .'
+            '. grundtext grundtext grundtext .'
+            '. grundlist grundtext2 grundtext2 .'
+            '. doc doc doc .'
+            '. docpic doctext doctext .'
+            '. structure structure structure .'
+            '. structuretext structuretext structurelisttitle .'
+            '. structurepic structurepic structurelist .'
+            '. structuretext2 structuretext2 structurelist .'
+            '. semantisk semantisk semantisk .'
+            '. semantisktext semantisktext semantisklist .'
+            '. nonsemantisk nonsemantisk . .'
+            '. nonsemantisktext nonsemantisktext nonsemantisklist .'
+            '. tags tags tags .'
+            '. . tagslist . .'
+            'ft ft ft ft ft';
+    }
+} 
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewraphtml {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat (5 1fr);
+        grid-template-areas: 
+            'hd hd hd hd hd'
+            'ti ti ti ti ti'
+            'grund grund grund grund grund'
+            '. grundpic grundpic grundpic .'
+            '. grundtext grundtext grundtext .'
+            '. grundlist grundtext2 grundtext2 .'
+            '. doc doc doc .'
+            '. docpic doctext doctext .'
+            '. structure structure structure .'
+            '. structuretext structuretext structurelisttitle .'
+            '. structurepic structurepic structurelist .'
+            '. structuretext2 structuretext2 structurelist .'
+            '. semantisk semantisk semantisk .'
+            '. semantisktext semantisktext semantisklist .'
+            '. nonsemantisk nonsemantisk . .'
+            '. nonsemantisktext nonsemantisktext nonsemantisklist .'
+            '. tags tags tags .'
+            '. . tagslist . .'
+            'ft ft ft ft ft';
+    }
+    
+}
+
+/* INFORMATION ARCHIETECTURE ------------------------------------*/
+
+#iapicture {
+    grid-area: iapicture;
+}
+
+#ialist {
+    grid-area: ialist;
+}
+
+#latch {
+    grid-area: latch;
+}
+
+#latchpicture {
+    grid-area: latchpicture;
+}
+
+#lacthtext {
+    grid-area: lacthtext;
+}
+
+#latchlist {
+    grid-area: latchlist;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+    #pagewrapgestalt {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'iapicture ialist'
+            'latch latch'
+            'latchpicture latchlist'
+            'lacthtext lacthtext'
+            'ft ft';
+    }
+} 
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapia {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'iapicture ialist'
+            'latch latch'
+            'latchpicture latchlist'
+            'lacthtext lacthtext'
+            'ft ft';
+    }
+}
+
+/*  ILLUSTRATOR --------------------------------------------*/
+
+#illtext {
+    grid-area: illtext;
+}
+
+#illpic {
+    grid-area: illpic;
+}
+
+#illtext2 {
+    grid-area: illtext2;
+}
+
+#slideshowtitle {
+    grid-area: slideshowtitle;
+}
+
+#illslideshow {
+    grid-area: illslideshow;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.10s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #EAC67A;
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapil {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'illtext slideshowtitle'
+            'illpic illslideshow'
+            'illtext2 .'
+            'ft ft';
+    }
+    #slideshowtitle {
+        align-self: end;
+    }
+    
+    #illpic {
+        margin-top: -25px;
+        margin-bottom: -25px;
+    }
+}
+
+/*  INSTAGRAM PAGE ----------------------------------*/
+
+#alg {
+    grid-area: alg;
+}
+
+#algtext {
+    grid-area: algtext;
+}
+
+#hash {
+    grid-area: hash;
+}
+
+#hashtext {
+    grid-area: hashtext;
+}
+
+#ops {
+    grid-area: ops;
+}
+
+#opslist {
+    grid-area: opslist;
+    text-align: center;
+    
+}
+
+#source {
+    grid-area: source;
+    display: inline-block;
+}
+
+.hashtags {
+    color: #233237;
+    line-height: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+.listings {
+    padding-bottom: 15px;
+}
+
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapinsta {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'alg hash'
+            'algtext hashtext'
+            'ops ops'
+            'opslist opslist'
+            'source .'
+            'ft ft';
+    }
+    
+    #opslist {
+        margin-top: -25px;
+    }
+}
+
+/* INTERNET PAGE -------------------------------------*/
+
+#title1 {
+    grid-area: title1;
+}
+
+#historyvideo {
+    grid-area: historyvideo;
+}
+
+#title2 {
+    grid-area: title2;
+}
+
+#servervideo {
+    grid-area: servervideo;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapinternet2 {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'title1 title1'
+            'title2 title2'
+            'historyvideo servervideo'
+            'ft ft';
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapinternet2 {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'title1 title2'
+            'historyvideo servervideo'
+            'ft ft';
+    }
+}
+
+/*  READING PAGE --------------------------------------*/
+
+#introtext {
+    grid-area: introtext;
+}
+
+#readinglist {
+    grid-area: readinglist;
+}
+
+#readingtext {
+    grid-area: readingtext;
+}
+
+#readingpic {
+    grid-area: readingpic;
+}
+
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapinternet {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'introtext readingpic'
+            'readinglist readingpic'
+            'readingtext readingtext'
+            'ft ft';
+    }
+    #readingpic {
+        margin-top: 25px;
+    }
+    #listings {
+        line-height: 35px;
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapreading {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'introtext readingpic'
+            'readinglist readingpic'
+            'readingtext readingtext'
+            'ft ft';
+    }
+}
+
+/*  PARADIGMER PAGE -------------------------------------*/
+
+#typekomm {
+    grid-area: typekomm;
+}
+
+#typekommtext {
+    grid-area: typekommtext;
+}
+
+#hvadkomm {
+    grid-area: hvadkomm;
+}
+
+#hvadkommpic {
+    grid-area: hvadkommpic;
+}
+
+#hvadkommtext {
+    grid-area: hvadkommtext;
+}
+
+#hvadkommlist {
+    grid-area: hvadkommlist;
+}
+
+#title2 {
+    grid-area: title2;
+}
+
+#samfund {
+    grid-area: samfund;
+}
+
+#samfundtext {
+    grid-area: samfundtext;
+}
+
+#samfundlist {
+    grid-area: samfundlist;
+    text-align: center;
+}
+
+#lass {
+    grid-area: lass;
+}
+
+#lasspic {
+    grid-area: lasspic;
+}
+
+#lasslist {
+    grid-area: lasslist;
+    text-align: center;
+}
+
+#structurelist {
+    grid-area: structurelist;
+}
+
+#aida {
+    grid-area: aida;
+}
+
+#aidapic {
+    grid-area: aidapic;
+}
+
+#aidalist {
+    grid-area: aidalist;
+    text-align: center;
+}
+
+#human {
+    grid-area: human;
+}
+
+#humantext {
+    grid-area: humantext;
+}
+
+#humanlist {
+    grid-area: humanlist;
+    text-align: center;
+}
+
+#imk {
+    grid-area: imk;
+}
+
+#imklist {
+    grid-area: imklist;
+    
+}
+
+#thorl {
+    grid-area: thorl;
+}
+
+#thorlpic {
+    grid-area: thorlpic;
+}
+
+#thorltext {
+    grid-area: thorltext;
+    
+}
+
+dl {
+    line-height: 25px
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrappara {
+        display: grid;
+        grid-gap: 35px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'typekomm typekomm'
+            'typekommtext typekommtext'
+            'hvadkomm hvadkomm'
+            'hvadkommpic hvadkommtext'
+            'hvadkommpic hvadkommlist'
+            'title2 title2'
+            'samfund samfund'
+            'samfundtext samfundlist'
+            'lass aida'
+            'lasspic aidapic'
+            'lasslist aidalist'
+            'human human'
+            'humantext humanlist'
+            'imk thorl'
+            'imkpic thorlpic'
+            'imklist thorltext'
+            'ft ft';
+    }
+}
+
+/* PHOTOSHOP -----------------------------------------*/
+
+
+#pstext {
+    grid-area: pstext;
+}
+
+#lag {
+    grid-area: lag;
+}
+
+#lagtext {
+    grid-area: lagtext;
+}
+
+#select {
+    grid-area: select;
+}
+
+#selecttext {
+    grid-area: selecttext;
+}
+
+#pen {
+    grid-area: pen;
+}
+
+#pentext {
+    grid-area: pentext;
+}
+
+#slideshowtitle {
+    grid-area: slideshowtitle;
+}
+
+#slideshow {
+    grid-area: slideshow;
+}
+
+#advps {
+    grid-area: advps;
+}
+
+#advpstext {
+    grid-area: advpstext;
+}
+
+#psexercise {
+    grid-area: psexercise;
+}
+
+#psexercisepic {
+    grid-area: psexercisepic;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapps {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'pstext pstext'
+            'lag lag'
+            'select select'
+            'pen pen'
+            'slideshow slideshow'
+            'advps advps'
+            'advpstext advpstext'
+            'psexercise psexercise'
+            'psexercisepic psexercisepic'
+            'ft ft';
+    }
+    
+    #slideshow {
+        margin-top: -55px;
+    }
+
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapps {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'pstext lag'
+            'slideshow select'
+            'slideshow pen'
+            'advps psexercise'
+            'advpstext psexercisepic'
+            'ft ft';
+    }
+ 
+}
+
+/* PRESENTATION PAGE ---------------------------------*/
+
+#head {
+    grid-area: head;
+}
+
+#who {
+    grid-area: who;
+    align-self: center;
+    border: 5px solid;
+}
+
+#fish {
+    grid-area: fish;
+}
+
+#fishtext {
+    grid-area: fishtext;
+}
+
+#canon {
+    grid-area: canon;
+}
+
+#canonpic {
+    grid-area: canonpic;
+}
+
+#canonlist {
+    grid-area: canonlist;
+    line-height: 25px;
+}
+
+#elevate {
+    grid-area: elevate;
+}
+
+#elevatepic {
+    grid-area: elevatepic;
+}
+
+#krops {
+    grid-area: krops;
+}
+
+#kropstext {
+    grid-area: kropstext;
+}
+
+#kropspic {
+    grid-area: kropspic;
+}
+
+#whotitle {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrappresent {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'head who'
+            'fish fish'
+            'fishpic fishtext'
+            'canon canon'
+            'canonlist canonpic'
+            'elevate elevate'
+            'elevatetext elevatepic'
+            'krops krops'
+            'kropspic kropstext'
+            'ft ft';
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrappresent {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'head who'
+            'fish fish'
+            'fishpic fishtext'
+            'canon canon'
+            'canonlist canonpic'
+            'elevate elevate'
+            'elevatetext elevatepic'
+            'krops krops'
+            'kropspic kropstext'
+            'ft ft';
+    }
+ 
+}
+
+/*  RESPONSIVENESS PAGE -----------------------------*/
+
+#flexy {
+    grid-area: flexy;
+    text-align: center;
+}
+
+
+#gridy {
+    grid-area: gridy;
+    text-align: center;
+}
+
+#vspic {
+    grid-area: vspic;
+}
+
+#hvadgrid {
+    grid-area: hvadgrid;
+}
+
+#hvadgridtext {
+    grid-area: hvadgridtext;
+}
+
+#hvadgridpic {
+    grid-area: hvadgridpic;
+}
+
+#hvadgridpic2 {
+    grid-area: hvadgridpic2;
+}
+
+#responsiveness {
+    grid-area: responsiveness;
+}
+
+#responsivenesstext {
+    grid-area: responsivenesstext;
+}
+
+#statisk {
+    grid-area: statisk;
+}
+
+#fluid {
+    grid-area: fluid;
+}
+
+#respon {
+    grid-area: respon;
+}
+
+#adapt {
+    grid-area: adapt;
+}
+
+#responvsadapt {
+    grid-area: responvsadapt;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewraprespond {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'flexy gridy'
+            'vspic vspic'
+            'hvadgrid hvadgrid'
+            'hvadgridtext hvadgridtext'
+            'hvadgridpic hvadgridpic2'
+            'responsiveness responsiveness'
+            'responsivenesstext responsivenesstext'
+            'statisk fluid'
+            'responvsadapt respon'
+            'responvsadapt adapt'
+            'ft ft';
+    }
+     #flexy {
+        text-align: right
+    }
+
+    #flextitle {
+        text-align: right;
+    }
+
+    #gridy {
+        text-align: left;
+    }
+    #gridtitle {
+        text-align: left
+    }
+ 
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewraprespond {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas: 
+            'hd hd hd'
+            'ti ti ti'
+            'flexy vspic gridy'
+            'hvadgrid hvadgrid hvadgrid'
+            'hvadgridpic2 hvadgridtext hvadgridpic'
+            'responsiveness responsiveness responsiveness'
+            'responsivenesstext responsivenesstext responsivenesstext'
+            'statisk responvsadapt respon'
+            'fluid responvsadapt adapt'
+            'ft ft ft';
+    }
+    #flexy {
+        text-align: right
+    }
+
+    #flextitle {
+        text-align: right;
+    }
+
+    #gridy {
+        text-align: left;
+    }
+    #gridtitle {
+        text-align: left
+    }
+ 
+}
+
+/* SEO PAGE -----------------------------------*/
+
+#intro {
+    grid-area: intro;
+}
+
+#vigtig {
+    grid-area: vigtig;
+}
+
+#boxedtext {
+    grid-area: boxedtext;
+    
+}
+#boxed {
+    border: 5px solid;
+    padding: 25px;
+    font-size: 25px;
+    font-family: 'Averia Libre', cursive;
+    font-weight: 500;
+    text-align: center;
+}
+
+#tre {
+    grid-area: tre;
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+}
+
+#google {
+    grid-area: google;
+}
+
+#googletext {
+    grid-area: googletext;
+}
+
+#a_vs_o {
+    grid-area: a_vs_o;
+}
+
+#avsotext {
+    grid-area: avsotext;
+}
+
+#source {
+    grid-area: source;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapseo2 {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'intro intro'
+            'vigtig boxedtext'
+            'tre tre'
+            'google google'
+            'googlepic googletext'
+            'avsotext a_vs_o'
+            'source .'
+            'ft ft';
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapseo2 {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'intro intro'
+            'vigtig boxedtext'
+            'tre tre'
+            'google google'
+            'googlepic googletext'
+            'avsotext a_vs_o'
+            'source .'
+            'ft ft';
+    }
+ 
+}
+
+/* SOCIAL MEDIA TEXT PAGE ------------------------------*/
+
+#smtext {
+    grid-area: smtext;
+}
+
+#listpart1 {
+    grid-area: listpart1;
+}
+
+#listpart2 {
+    grid-area: listpart2;
+    
+}
+
+#socialcolorspic {
+    grid-area: socialcolorspic;
+}
+
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapseo {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'intro intro'
+            'vigtig boxedtext'
+            'tre tre'
+            'google google'
+            'googlepic googletext'
+            'avsotext a_vs_o'
+            'source .'
+            'ft ft';
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapsometext {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'smtext smtext'
+            'listpart1 listpart2'
+            'socialcolorspic socialcolorspic'
+            'ft ft';
+    }
+ 
+}
+
+/* SEVEN ARCHETYPES ---------------------------------*/
+
+#arklist {
+    grid-area: arklist;
+}
+
+#arkpdf {
+    grid-area: arkpdf;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapseo {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            '. arklist'
+            'arkpdf arklist'
+            '. arklist'
+            'ft ft';
+    }
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapsyv {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            '. arklist'
+            'arkpdf arklist'
+            '. arklist'
+            'ft ft';
+    }
+ 
+}
+
+/* TEXT PRODUCTION PAGE ----------------------------*/
+
+#mediatype {
+    grid-area: mediatype;
+}
+
+#meditypelist {
+    grid-area: meditypelist;
+    line-height: 25px;
+}
+
+#medietyperpic {
+    grid-area: medietyperpic;
+    margin-top: 35px;
+}
+
+#nyhedskrit {
+    grid-area: nyhedskrit;
+}
+
+#nyhedskrittext1 {
+    grid-area: nyhedskrittext1;
+}
+
+#nyhedskritlist {
+    grid-area: nyhedskritlist;
+    line-height: 25px;
+
+}
+
+#nyhedskrittext2 {
+    grid-area: nyhedskrittext2;
+    
+}
+
+#pdf {
+    grid-area: pdf;
+}
+
+#pdftext {
+    grid-area: pdftext;
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewraptextpro {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'mediatype medietyperpic'
+            'meditypelist medietyperpic'
+            'nyhedskrit nyhedskrit'
+            'nyhedskrittext1 nyhedskritlist'
+            'nyhedskrittext2 nyhedskritlist'
+            'pdf pdftext'
+            'ft ft';
+    }
+ 
+}
+
+/* WORK TOOLS PAGE -----------------------------------*/
+
+#swot {
+    grid-area: swot;
+}
+
+#plc {
+    grid-area: plc;
+}
+
+#p5f {
+    grid-area: p5f;
+}
+
+#fourpm {
+    grid-area: fourpm;
+}
+
+#sevenpm {
+    grid-area: sevenpm;
+}
+
+#fourcm {
+    grid-area: fourcm;
+}
+
+#pagetext {
+    grid-area: pagetext;
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewraptools {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'pagetext pagetext'
+            'swot plc'
+            'p5f fourpm'
+            'sevenpm fourcm'
+            'pvc pvc'
+            'ft ft';
+    }
+ 
+}
+
+
+
+/* WEB TEXT PAGE ------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* WORKSHOP PAGE ------------------------------------*/
+
+#workshoptext {
+    grid-area: workshoptext;
+}
+
+#workshoppdf {
+    grid-area: workshoppdf;
+}
+
+@media screen and (min-width: 500px) {
+    #pagewrapworkshop {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'hd hd'
+            'ti ti'
+            'workshoptext workshoppdf'
+            'ft ft';
+     }
+}
+
+
+
+/* DESIGN THINKING PAGE -------------------------------*/
+
+#faser {
+    border-top: 5px solid;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    margin-top: 25px;
+}
+
+
+/* ONE PAGE PROJECT PAGE -------------------------------*/
+
+#onepagedescrip {
+    grid-area: onepagedescrip;
+}
+
+#onepagetext1 {
+    grid-area: onepagetext1;
+    border-top: 5px solid;
+    margin-top: 45px;
+
+}
+#onepagetext2 {
+    grid-area: onepagetext2;
+    border-top: 5px solid;
+    margin-top: 45px;
+
+}
+
+#onepageiframe {
+    grid-area: onepageiframe;
+    margin-top: 45px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* ISMEJER PAGE --------------------------------------*/
+
+#isdescrip {
+    grid-area: isdescrip;
+}
+
+#descriptext {
+    grid-area: descriptext;
+}
+#isone {
+    grid-area: isone;
+}
+
+#istwo {
+    grid-area: istwo;
+}
+
+#isthree {
+    grid-area: isthree;
+}
+
+#isfour {
+    grid-area: isfour;
+}
+
+#isfive {
+    grid-area: isfive;
+}
+
+#issix {
+    grid-area: issix;
+}
+
+/*  TABLET  */
+@media screen and (min-width: 500px) {
+    #pagewrapis {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+            'hd hd'
+            'ti ti'
+            'isdescrip isdescrip'
+            'descriptext descriptext'
+            'isone istwo'
+            'isthree isfour'
+            'isfive issix'
+            'ft ft';
+    }
+ 
+}
+
+/*  DESKTOP  */
+@media screen and (min-width: 1000px) {
+    #pagewrapis {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas: 
+            'hd hd hd'
+            'ti ti ti'
+            'isdescrip isdescrip isdescrip'
+            'descriptext descriptext descriptext'
+            'isone istwo isthree'
+            'isfour isfive issix'
+            'ft ft ft';
+    }
+ 
+}
+
+
+
+
+/* EXAM PAGE -----------------------------------------*/
+
+
+
+
+
+
+
+
+
+

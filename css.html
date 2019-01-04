@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="stylesheet" href="CSS/master_grid.css">
+        <link rel="stylesheet" 
+              href="CSS/header.css">
+        
+        
+    </head>
+    <body class="page">
+        <div id="pagewrapcss">
+        
+            <header class="header" 
+                    id="pageheader">
+                <div id="logo"
+                     class="images">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             class="responsive"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+            
+            <div id="title">
+                <img src="PIX/c_s_s.jpg"
+                     id="csspix"
+                     class="responsive"
+                     alt="CSS Title Picture">
+                <figcaption>
+                    <a href="https://www.youtube.com/watch?v=_0BN9olN5gk"
+                       class="sources">Kilder</a>
+                </figcaption>
+            </div>
+            
+            <div id="css">
+                <p>
+                    CSS er et sprog som beskriver udseende af et HTML dokument. Det giver mulighed for at adskille struktur og udseende, altså at skifte udseende, ikke at skifte struktur af en HTML dokument. “Styles” er regler som kan blive navngivet og refereres i et HTML dokument. Et “StyleSheet” har alle de regler i det samme sted. 
+                </p>
+                <p>
+                    En StyleSheet kan placeres på tre forskellige måder. 
+                </p>
+            </div>
+            
+            <div id="inlinecss">
+                <img src="PIX/inline_css.JPG"
+                     alt="Inline CSS Example"
+                     class="responsive"
+                     id="incss">
+                <figcaption>
+                    <a href="http://learningphplanguage.blogspot.com/2012/11/glance-about-css-cascading-style-sheet.html">Kilder</a>
+                    <p>
+                    <b>Inline</b> - her skriver du CSS i et HTML tag. Husk, at det vil skifte struktur af siden.
+                </p>
+                </figcaption>
+            </div>
+                <br>
+            
+            <div id="internpic">
+                <img src="PIX/internal_css.JPG"
+                     alt="Internal CSS"
+                     class="responsive"
+                     id="interncss">
+                <figcaption>
+                    <a href="https://www.c-sharpcorner.com/UploadFile/e6a884/types-of-css/"
+                       class="sources">Kilder</a>
+                     <p>
+                    <b>Internal StyleSheet</b> - Det er brugt hvis en enkelt side skal have en enestående stil. Det placeres i &lt;head&gt; af et HTML dokument. 
+                </p>
+                </figcaption>
+            </div>
+                <br>
+            
+            <div id="externpic">
+                <img src="PIX/external_css.JPG"
+                     alt="External CSS Example"
+                     class="responsive"
+                     id="excss">
+                <figcaption>
+                    <a href="https://www.homeandlearn.co.uk/WD/wds5p4.html"
+                       class="sources">Kilder</a>
+                    <p>
+                    <b>External StyleSheet </b> - er et link til en CSS fil. Her du kan skifte hele hjemmesiden i bare en fil. Den slags CSS fil skal blive i en &lt;link&gt; tag som ligger i &lt;head&gt; sektion af hjemmesiden.
+                </p>
+                </figcaption>
+            </div>
+            <div id="syntax">
+                <h2>
+                    CSS Syntaks
+                </h2>
+            </div>
+            <div id="syntaxpic">
+                <img src="PIX/css-selectors-lrg.png"
+                     alt="CSS Selector Description"
+                     class="responsive"
+                     id="css_select">
+                <figcaption>
+                    <a href="https://en.support.wordpress.com/custom-design/css-basics/">Kilder</a>
+                </figcaption>
+            </div>
+            <div id="syntaxtext">
+                <p>
+                    En selector er, hvad skal styles. Der er tre primære type selectors. Det kan være alle tags af en slags type (p, main, a, img, h1, osv), almindelige tags. Det kan også være class selectors. De skal bruges når der er flere elementer som skal skifte stil. Tags er mærket med en klasse (&lt;p class=”general”&gt;) i HTML dokument, og er brugt med punktum i stylesheet ( .general {......). Til sidst, er id selector. Det er brugt, når det er et helt specifikt element som skal skifte stil. Tags er mærket i HTML (&lt;p id=”paragraph1”&gt;) og i stylesheet er # hashtag brugt ( #paragraph1 {....).
+                </p>
+                <p>
+                    Den declaration er imellem { } (curly brackets). De property eller egenskaber er hvilken karakteristik som skal skiftes, og value er, hvad skal det skiftes til. Der skal altid være en colon imellem property og value, ellers vil det ikke blive anerkendt. Desuden kan der blive mere end en enkelt property under en selector, Der kan ligger flere properties under en selector, bare husk at bruge en semi-colon mellem properties, og alle properties skal være under det samme par brackets.
+                </p>
+            </div>
+           
+                <br>
+            <div id="psuedo">
+                <p>
+                    Psuedo klasse selectors er et nøgleord, som er brugt til at skifte en særlig tilstand af en selector (for eksempel, hover på en button ( :hover ), eller et link som har være visited ( :visited ) før).
+                </p>
+            </div>
+            <div id="psuedopic">
+                <img src="PIX/css_pseudo.JPG"
+                     alt="CSS Pseudo Selectors Example"
+                     class="responsive"
+                     id="csspseu">
+            </div>
+                <br>
+       
+            <br>
+            <div id="cascad">
+                <h2>
+                    Cascading Regler
+                </h2>
+                <p>
+                    I CSS er kaskade meget vigtig. Det angiver hvilke regler er vigtigst, Men betydning afhænger af hvad er vigtigt, hvor specifikt det er, og kildeorden. 
+                </p>
+                <p>
+                    Hvis der er brugt !important i StyleSheet, vil det være den selector som har mest betydning til selector. De vil altid vinde over andre CSS.
+                </p>
+                <p>
+                    Specificity betyder at dem med lav specificity, vil ikke være så vigtig i en StyleSheet. Element selectors (p, h1, main) har lav specificty. Class selectors har højere specificity over element selectors, og vil være mere vigtig i CSS. Men id selectors har den højeste specificty over resten. De vinder over alle andre.
+                </p>
+                <p>
+                    Til sidst er Source order (kildeorder), det betyder, at hvis du har flere af de samme selectors, vil den sidst skrevet selector have mest betydning. 
+                </p>
+            </div>
+            <div id="caspic">
+                <img src="PIX/cascading_regler.JPG"
+                     alt="Cascading Rule Example"
+                     class="responsive"
+                     id="cre">
+                <figcaption>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance">Kilder</a>
+                </figcaption>
+            </div>
+            
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    </body>
+</html>

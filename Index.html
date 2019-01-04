@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>ELG</title>
+
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" 
+              href="CSS/CSS-grids.css">
+        <link rel="stylesheet"
+              href="CSS/picturehover.css">
+        <link rel="stylesheet"
+              href="CSS/header.css">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre:300,400,700|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/master.css">
+              
+    </head>
+    <body class="page">
+        <div id="pagewraplanding">
+        
+             <header class="header" 
+                    id="pageheader">
+                <div id="logo">
+                    <a href="Index.html">
+                        <img src="PIX/logo180.jpg"
+                             alt="elglogopicture"
+                             id="elglogo">
+                    </a>
+                   
+                </div>
+                
+               <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="Index.html">Home</a>
+                  <a href="webudvikling.html">Webudvikling</a>
+                  <a href="design.html">Design</a>
+                  <a href="kommunikation.html">Kommunication</a>
+                  <a href="onlinemarketing.html">Online Marketing</a>
+                  <a href="projekter.html">Projekter</a>
+                  <a href="ommig.html">Om Mig</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰               </button>
+            </header>
+        
+                        
+                    <a href="kommunikation.html"
+                       class="img-overlay"
+                       id="komm">
+                        <img src="PIX/komm.jpg" 
+                             alt='Kommunikation Billede' class="responsive"
+                             id="kommpic">
+                
+                            <div class="overlay">
+                                <span id="kommun">KOMMUNIKATION</span>
+                            </div>
+                    </a>
+            
+                    <a href="design.html"
+                       class="img-overlay"
+                       id="des">
+                        <img src="PIX/design.jpg" 
+                             alt='Design Billede' 
+                             class='responsive'
+                             id='despic'>
+                            <div class="overlay">
+                                 <span id="designfront">DESIGN</span>
+                            </div>
+                    </a>
+                
+                    <a href="webudvikling.html"
+                       class="img-overlay"
+                       id="webud">
+                        <img src="PIX/web.jpg" 
+                             alt='Web Billede' 
+                             class="responsive"
+                             id="webudpic">
+                            <div class="overlay">
+                                 <span id="webudvikling">WEBUDVIKLING</span>
+                            </div>
+                    </a>
+                
+                    <a href="onlinemarketing.html"
+                       class="img-overlay"
+                       id="onmark">
+                        <img src="PIX/onmark.jpg" 
+                             alt='Online Marketing Billede' class="responsive"
+                             id="onmarkpic">
+                            <div class="overlay">
+                                 <span id="onmarketing">ONLINE MARKETING</span>
+                            </div>
+                    </a>
+                
+                    <a href="projekter.html"
+                       class="img-overlay"
+                       id="proj">
+                        <img src="PIX/projekt.jpg" 
+                             alt='Projekter Billede' class="responsive"
+                             id="projpic">
+                            <div class="overlay">
+                                 <span id="projekter">PROJEKTER</span>
+                            </div>
+                    </a>
+                
+                    <a href="ommig.html"
+                       class="img-overlay"
+                       id="ommig">
+                       <img src="PIX/erin_250.jpg"  
+                            alt="My Picture" 
+                            class="responsive"
+                            id="ommigpic">
+                            <div class="overlay">
+                                 <span id="mig">OM MIG</span>
+                            </div>
+                    </a>
+                
+                <div class="griditem"
+                     id="quote">
+                    <p id="quotetext">
+                        Done,
+                        <br>
+                        Not
+                        <br>
+                        Perfect
+                    </p>
+                </div>
+            
+        
+            <footer class="footer" 
+                    id="pagefooter">
+                <div>
+                    <p class="footer-text">&copy; Erin Lyn Gertsen 2018</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</html>
